@@ -22,10 +22,10 @@ a {
 }
 
 .header-title {
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 1.7em;
-  border: 1px solid #5b7e79;
-  flex: 1;
+  border-top: 4px solid #5b7e79;
+  /* flex-grow: 1; */
 }
 
 .header-title-container {
@@ -40,13 +40,15 @@ a {
   text-align: right;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  flex: 1;
+  justify-content: space-between;
+  padding: 1.5rem;
+  /* flex-grow: 1; */
 }
 
 .header-date-cite {
   color: #5b7e79;
   border: 1px solid salmon;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 1.4em;
 }
 
@@ -100,7 +102,7 @@ a {
   /* border: 1px solid brown; */
   text-align: center;
   font-size: 1.2em;
-  color: rgb(97, 93, 93);
+  color: #817d82;
 }
 
 .main-section {
@@ -134,7 +136,7 @@ a {
   font-family: "Nunito", sans-serif;
   /* border: 1px solid green; */
   padding: 0.5rem 0.5rem 0.5rem 0;
-  color: rgb(97, 93, 93);
+  color: #a2acb4;
 }
 
 .article-content div {
@@ -152,7 +154,8 @@ a {
 .p-content {
   width: 70%;
   font-family: "Raleway", sans-serif;
-  padding: 1em 1em 0 0;
+  padding: 0.5em 1em 0 0;
+  color: #6e6e6e;
   /* padding: 1em 2em 1em 0; */
 }
 
@@ -164,7 +167,7 @@ a {
 }
 
 .p-email a {
-  color: #5b7e79;
+  color: #4e796f;
   border: 1px solid rgb(187, 187, 187);
   padding: 2em 2em;
   border-radius: 5px;
@@ -182,7 +185,7 @@ a {
 .article-about-h5 {
   /* border: 1px solid darkblue; */
   padding: 0.3em 0.3em 0.3em 0;
-  color: #5b7e79;
+  color: #a8b1b9;
   font-family: "Raleway", sans-serif;
   font-family: "Nunito", sans-serif;
 }
@@ -193,6 +196,7 @@ a {
   margin-top: 1em;
   width: 70%;
   font-family: "Raleway", sans-serif;
+  color: #6e6e6e;
 }
 
 .footer {
