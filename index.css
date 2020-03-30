@@ -32,11 +32,11 @@ a {
   width: 100%;
   font-family: "Julius Sans One", sans-serif;
   font-weight: normal;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-date-nav-wrapper {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -47,13 +47,13 @@ a {
 
 .header-date-cite {
   color: #5b7e79;
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
   font-family: "Julius Sans One", sans-serif;
   font-size: 1.4em;
 }
 
 .header-nav {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 0.3em 0 0.3em 0.3em;
 }
 
