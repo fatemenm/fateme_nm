@@ -87,18 +87,21 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* border: 1px solid pink; */
 }
 
 .speaker-section-header {
-  padding: 1em 0.5em 0em 0.5em;
-  /* border: 1px solid purple; */
+  padding: 1.5em 0.5em 0em 0.5em;
+  /* border: 1px solid yellow; */
   text-align: center;
   font-size: 2em;
   color: #6b8f85;
 }
 
 .speaker-section-paragraph {
-  padding: 2em 0.5em;
+  /* padding: 2em 0.5em; */
+  padding: 1em 0.5em 2em 0.5em;
+  line-height: 1.6;
   /* border: 1px solid brown; */
   text-align: center;
   font-size: 1.2em;
@@ -121,6 +124,8 @@ a {
   direction: column;
   /* border: 1px solid lightseagreen; */
   padding: 1em 1em 0 1em;
+  width: 80%;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
@@ -156,7 +161,7 @@ a {
   font-family: "Raleway", sans-serif;
   padding: 0.5em 1em 0 0;
   color: #6e6e6e;
-  /* padding: 1em 2em 1em 0; */
+  padding: 1em 2em 1em 0;
 }
 
 .p-email {
@@ -180,6 +185,8 @@ a {
   /* border: 1px solid yellow; */
   margin-top: 0.5em;
   padding: 0 1em 1.5em 1em;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .article-about-h5 {
@@ -207,9 +214,17 @@ a {
   padding: 0.5em;
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid cyan; */
+  display: flex;
+  flex-flow: row-wrap;
+}
+
 .footer-div {
   color: #76948f;
-  /* border: 1px solid red; */
+  /* border: 1px solid white; */
   width: 50%;
   padding: 2em 2em 2em 1em;
 }
