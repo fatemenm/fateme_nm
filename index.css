@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Raleway", sans-serif;
+  font-size: 1.2vw;
 }
 
 a {
@@ -12,7 +13,6 @@ a {
 }
 
 .header {
-  /* height: 50%; */
   background-color: #283f51;
   color: white;
   display: flex;
@@ -24,8 +24,7 @@ a {
 .header-title {
   padding: 1.5rem;
   font-size: 1.7em;
-  border-top: 4px solid #5b7e79;
-  /* flex-grow: 1; */
+  border-top: 0.5vh solid #5b7e79;
 }
 
 .header-title-container {
@@ -33,6 +32,7 @@ a {
   font-family: "Julius Sans One", sans-serif;
   font-weight: normal;
   /* border: 1px solid red; */
+  font-size: 3vw;
 }
 
 .header-date-nav-wrapper {
@@ -42,7 +42,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem;
-  /* flex-grow: 1; */
 }
 
 .header-date-cite {
@@ -167,7 +166,7 @@ a {
 .p-email {
   width: 30%;
   text-align: center;
-  /* padding: 1rem; */
+  padding: 1rem;
   text-align: center;
 }
 
@@ -177,7 +176,9 @@ a {
   padding: 2em 2em;
   border-radius: 5px;
   width: 100%;
+  margin: 0 auto;
   white-space: pre-line;
+
   display: inline-block;
 }
 
@@ -243,12 +244,13 @@ a {
 
 .footer-nav ul {
   display: flex;
+
   flex-flow: row nowrap;
   /* border: 1px solid #f8ffae; */
-  width: 80%;
+  width: 100%;
 
   margin-left: 7.6em;
-  /* float: right; */
+  float: right;
   justify-content: flex-end;
   text-align: right;
 }
@@ -259,14 +261,32 @@ a {
   margin: 0 1em;
 }
 
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 1200px) {
   body {
-    /* background-color: aquamarine; */
+    /* background-color: rgb(216, 189, 235); */
   }
+
   .header-title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 1.6em 0.8em;
   }
+  .header-date-cite {
+    color: #5b7e79;
+    /* border: 0.7px solid salmon; */
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .speaker-section-header {
+    font-size: 1.7em;
+  }
+
+  .speaker-section-paragraph {
+    /* padding: 2em 0.5em; */
+    padding: 1em 0 2em 0;
+    font-size: 1em;
+  }
+
   .p-content {
     width: 60%;
   }
@@ -285,40 +305,5 @@ a {
 
   .footer-nav {
     width: 70%;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  * {
-    font-size: 1em;
-  }
-  body {
-    /* background-color: darkkhaki; */
-  }
-
-  .header-title {
-    font-size: 1.2em;
-    padding: 2.1em 1em;
-  }
-
-  .header-date-cite {
-    font-size: 1em;
-  }
-
-  .header-nav ul li {
-    font-size: 0.8em;
-  }
-
-  .footer-span {
-    width: 40%;
-  }
-
-  .footer-nav {
-    font-size: 0.7em;
-    width: 60%;
-  }
-
-  .p-email-link {
-    font-size: 0.8em;
   }
 }
