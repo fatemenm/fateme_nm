@@ -29,7 +29,7 @@ a {
 
 .header-title-container {
   width: 100%;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   /* border: 1px solid red; */
   font-size: 3vw;
@@ -165,7 +165,6 @@ a {
 
 .p-email {
   width: 30%;
-  text-align: center;
   padding: 1rem;
   text-align: center;
 }
@@ -191,6 +190,7 @@ a {
 }
 
 .article-about-h5 {
+  /* margin-top: 2rem; */
   /* border: 1px solid darkblue; */
   padding: 0.3em 0.3em 0.3em 0;
   color: #a8b1b9;
@@ -261,49 +261,284 @@ a {
   margin: 0 1em;
 }
 
-@media only screen and (max-width: 1200px) {
+/**********
+**********/
+
+@media only screen and (max-width: 1100px) {
+  * {
+    font-size: 1.6vw;
+  }
   body {
-    /* background-color: rgb(216, 189, 235); */
-  }
-
-  .header-title {
-    font-size: 1.4em;
-    padding: 1.6em 0.8em;
-  }
-  .header-date-cite {
-    color: #5b7e79;
-    /* border: 0.7px solid salmon; */
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 1.2rem;
-  }
-
-  .speaker-section-header {
-    font-size: 1.7em;
-  }
-
-  .speaker-section-paragraph {
-    /* padding: 2em 0.5em; */
-    padding: 1em 0 2em 0;
-    font-size: 1em;
-  }
-
-  .p-content {
-    width: 60%;
+    padding: 0;
+    margin: 0;
   }
 
   .p-email {
     width: 40%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .p-email a {
+    text-align: center;
+    font-size: 1.5vw;
+  }
+}
+
+/**********
+**********/
+
+@media only screen and (max-width: 414px) {
+  body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 2vw;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    /* height: 100rem; */
+  }
+
+  header {
+    height: 100rem;
+    flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header-title {
+    width: 100%;
+    border-bottom: 0.5vh solid #5b7e79;
+    height: 40%;
+    /* text-align: center; */
+    padding: 0;
+  }
+
+  .header-title-container {
+    /* border: 1px solid #2af; */
+    height: 100%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    padding-top: 12rem;
+    font-size: 10vw;
+  }
+
+  .header-date-nav-wrapper {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: space-between; */
+  }
+
+  .header-date-cite {
+    /* border: 1px solid #fa2; */
+    height: 20%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    font-size: 7vw;
+    padding-top: 0.8em;
+  }
+
+  .header-date-cite > * {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    font-size: 4vw;
+    text-align: center;
+    /* border: 1px solid blue; */
+  }
+
+  .header-nav {
+    /* border: 1px solid green; */
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .nav-ul {
+    display: flex;
+    flex-flow: column wrap;
+    /* border: 1px solid salmon; */
+    height: 100%;
+    padding: 0.4em 0;
+    justify-content: space-evenly;
+  }
+  .nav-ul a {
+    color: white;
+    font-size: 4vw;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+  }
+
+  .nav-ul li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-weight: bolder;
+    /* border: 1px solid palegoldenrod; */
+    text-align: center;
+  }
+
+  .speaker-section {
+    height: 35rem;
+    font-size: 3vw;
+    /* border: 1px solid blue; */
+  }
+
+  .speaker-section-header {
+    font-size: 5vw;
+    text-align: center;
+    /* border: 1px solid red; */
+    height: 40%;
+  }
+
+  .speaker-section-paragraph {
+    height: 60%;
+    text-align: center;
+    padding: 0 4rem;
+    /* border: 1px solid green; */
+  }
+
+  .main-section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+
+  .post {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 92rem;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+  }
+
+  .article-content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid yellow; */
+    text-align: left;
+  }
+
+  .article-content > * {
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+
+  .article-content h2 {
+    font-size: 4vw;
+    padding: 1em 0 0.5em 0;
+    padding-left: 1rem;
+  }
+
+  .article-content h5 {
+    font-size: 3vw;
+    padding-left: 1rem;
+  }
+
+  .article-content-main-section {
+    display: flex;
+    height: 50rem;
+    padding: 0;
+    margin: 0;
+    flex-flow: column wrap;
+    /* border: 1px solid green; */
+    justify-content: flex-start;
+  }
+
+  .article-content-p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid blue; */
+    padding-left: 1rem;
+  }
+
+  .p-content {
+    font-size: 3.5vw;
+  }
+
+  .p-email {
+    text-align: left;
+  }
+
+  .p-email a {
+    width: 30%;
+    font-size: 2vw;
+  }
+
+  .article-about {
+    /* border: 1px solid blue; */
+    /* padding: 3rem; */
+    margin: 0;
+    width: 100%;
+    height: 25rem;
+  }
+
+  .article-about-h5 {
+    font-size: 3vw;
+    /* border: 1px solid pink; */
+    padding-left: 1rem;
   }
 
   .article-about-paragraph {
-    width: 60%;
+    font-size: 3.5vw;
+    /* border: 1px solid green; */
+    width: 100%;
+    margin-top: 0.3rem;
+    padding-left: 1rem;
   }
 
-  .footer-span {
-    width: 30%;
+  .footer-div {
+    text-align: left;
+    width: 100%;
+    height: 50%;
   }
 
   .footer-nav {
-    width: 70%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .footer-span {
+    font-size: 2.5vw;
+    padding: 0 1rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .fo-part {
+    width: 100%;
+  }
+
+  footer {
+    height: 17rem;
+    display: flex;
+    flex-flow: column wrap;
+    /* border: 1px solid gray; */
+  }
+
+  .footer-ul > * {
+    display: block;
+    font-size: 2.7vw;
+    padding-right: 1rem;
   }
 }
